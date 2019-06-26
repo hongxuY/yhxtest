@@ -1,8 +1,13 @@
 #coding:utf-8
-
-lirun=float (raw_input("请输入利润（单位：万）"))
-
-if lirun<=10:
+while True:
+    try:
+        lirun=float (raw_input("请输入利润（单位：万）"))
+        break
+    except:
+        print("输入有误，请重新输入")
+if lirun<=0:
+    jianjin=0
+elif lirun<=10:
     jianjin=lirun*0.1
 elif lirun<=20:
     jianjin=10*0.1+(lirun-10)*0.075
@@ -15,4 +20,4 @@ elif lirun<=100:
 else:
     jianjin = 10 * 0.1 + 10 * 0.075 + 20 * 0.05 + 20 * 0.03 + 40 * 0.015+(lirun-100)*0.01
 
-print ("这个月的奖金是%d"%(jianjin))
+print ("这个月的奖金是%.3f"%(jianjin))
