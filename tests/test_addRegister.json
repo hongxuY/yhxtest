@@ -1,0 +1,23 @@
+{
+  "testTel_case001": {
+    "tel": "133499262109"
+  },
+  "testTel_case002": {
+    "tel": "1334992621"
+  },
+  "testTel_case003": {
+    "tel": "1334992a219"
+  },
+  "testTel_case004": {
+    "tel": ""
+  },
+  "testTel_case005": {
+    "tel": "1"
+  },
+  "testTel_case006": {
+    "tel": "1334992 219"
+  },
+  "testTel_case007": {
+    "tel": "13342198897"
+  }
+}

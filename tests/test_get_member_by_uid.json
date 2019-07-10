@@ -1,0 +1,39 @@
+{
+  "testuid_case01": {
+    "uid": "3"
+  },
+  "testuid_case02": {
+    "uid": "1000"
+  },
+  "testuid_case03": {
+    "uid": "asd"
+  },
+  "testuid_case04": {
+    "uid": "asd132"
+  },
+  "testuid_case05": {
+    "uid": "asd"
+  },
+  "testuid_case06": {
+    "uid": "!@#$$"
+  },
+  "testuid_case07": {
+    "uid": "#@!#@ds"
+  },
+  "testuid_case08": {
+    "uid": "!@##21"
+  },
+  "testuid_case09": {
+    "uid": "sads；‘；"
+  },
+  "testuid_case010": {
+    "uid": "#@！#2hjdsf11"
+  },
+  "testuid_case011": {
+    "uid": "null"
+  },
+  "testuid_case012": {
+    "uid": "asd；’；@！@！#13321"
+  }
+}
+

@@ -1,0 +1,20 @@
+{
+  "SearchByTel_case01": {
+    "tel": "13312345678"
+  },
+  "SearchByTel_case02": {
+    "tel": "11111111111"
+  },
+  "SearchByTel_case03": {
+    "tel": "4567"
+  },
+  "SearchByTel_case04": {
+    "tel": "5678"
+  },
+  "SearchByTel_case05": {
+    "tel": "13312345678"
+  },
+  "SearchByTel_case06": {
+    "tel": "133123456789"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "testuid01": {
+    "input_data": {
+        "uid": "sq2"}
+  },
+  "testuid02": {
+    "input_data": {
+      "uid": "e@"}
+    },
+  "testuid03": {
+    "input_data": {
+      "uid": "1%"}
+    },
+  "testuid04": {
+    "input_data": {
+      "uid": "b"}
+  },
+  "testuid05": {
+    "input_data": {
+      "uid": "$"}
+  },
+  "testuid06": {
+    "input_data": {
+      "uid": "100"}
+  },
+  "testuid07": {
+    "input_data": {
+      "uid": "'sb'"}
+  },
+  "testuid08": {
+    "input_data": {
+      "uid": " "}
+  },
+  "testuid09": {
+    "input_data": {
+      "uid": "NULL"}
+  },
+  "testuid10": {
+    "input_data": {
+      "uid": "1"}
+  },
+  "testuid11": {
+    "input_data": {
+      "uid": "7"}
+  }
+}
