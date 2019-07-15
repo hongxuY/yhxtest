@@ -46,10 +46,10 @@ class Member(db.Model):
             return ret_dic
         elif len(tel) == 4:
             dbquery = Member.query.all()
-            member_list =[]
+            member_list = []
 
             for member in dbquery:
-                if member.tel.endswith(tel)==True:
+                if member.tel.endswith(tel) == True:
                     member_info = {
                         "uid": member.uid, "tel": member.tel, 'discount': member.discount,
                         "score": member.score, "active": member.active
@@ -60,7 +60,7 @@ class Member(db.Model):
                         "ret_code": "200",
                         "member": member_list
                     }
-            if len(member_list)==0:
+            if len(member_list) == 0:
                 ret_dic = {
                     "msg": "search member by tell false",
                     "ret_code": "400",
@@ -73,8 +73,6 @@ class Member(db.Model):
                 "ret_code": "400",
             }
             return ret_dic
-
-
 
     @classmethod
     def update_member_score(cls, uid, score):
@@ -96,18 +94,17 @@ class Member(db.Model):
         ret_dic = cls.search_by_tell(tel)['members'][0]
         return ret_dic
 
-
     @classmethod
-    def update_member_by_uid(cls, uid,member ,new_tel, new_discount, new_score, new_active):
-        if uid=="" or new_tel=="" or new_discount=="" or new_score=="" or new_active=="":
-            ret_dic={"return_code": "400",
-            "return_msg": "修改的属性不能为空"}
+    def update_member_by_uid(cls, uid, member, new_tel, new_discount, new_score, new_active):
+        if uid == "" or new_tel == "" or new_discount == "" or new_score == "" or new_active == "":
+            ret_dic = {"return_code": "400",
+                       "return_msg": "修改的属性不能为空"}
             return ret_dic
-        elif new_active !="0" and new_active !="1":
+        elif new_active != "0" and new_active != "1":
             ret_dic = {"return_code": "400",
                        "return_msg": "激活状态只能为0或1"}
             return ret_dic
-        elif int(new_score)<0:
+        elif int(new_score) < 0:
             ret_dic = {"return_code": "400",
                        "return_msg": "积分不能为负数"}
             return ret_dic
@@ -115,7 +112,7 @@ class Member(db.Model):
             ret_dic = {"return_code": "400",
                        "return_msg": "电话号码为11位"}
             return ret_dic
-        elif float(new_discount) > 1 or float(new_discount)<0:
+        elif float(new_discount) > 1 or float(new_discount) < 0:
             ret_dic = {"return_code": "400",
                        "return_msg": "折扣为0到1之间"}
             return ret_dic
@@ -145,14 +142,14 @@ class Member(db.Model):
     def inactive_member(cls, uid):
         for i in range(len(Member.members)):
             if Member.members[i]['uid'] == uid:
-               Member.members[i]['active'] = '0'
+                Member.members[i]['active'] = '0'
 
             ret_dic = {
-                    'uid': Member.members[i]['uid'],
-                    'tel': Member.members[i]['tel'],
-                    'active': '0',
-                    'discount': '1'
-                }
+                'uid': Member.members[i]['uid'],
+                'tel': Member.members[i]['tel'],
+                'active': '0',
+                'discount': '1'
+            }
             return ret_dic
 
     @classmethod
@@ -163,9 +160,9 @@ class Member(db.Model):
             if mem['uid'] == uid:
                 member_list.append(mem)
                 break
-        ret_dic={
-            "count":len(member_list),
-            "member":member_list
+        ret_dic = {
+            "count": len(member_list),
+            "member": member_list
         }
 
         return ret_dic
@@ -179,7 +176,7 @@ class Member(db.Model):
                          "score": member.score, "active": member.active}
             memberList.append(newMember)
         returnDict = {
-            "code":200,
+            "code": 200,
             "msg": "queryAll success",
             "count": len(memberList),
             "member": memberList
@@ -221,6 +218,3 @@ class Member(db.Model):
             "member": member_list
         }
         return ret_dic
-
-
-
