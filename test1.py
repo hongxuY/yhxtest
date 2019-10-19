@@ -1,7 +1,7 @@
 #coding:utf-8
 while True:
     try:
-        lirun=float (raw_input("请输入利润（单位：万）"))
+        lirun=float (input("请输入利润（单位：万）"))
         break
     except:
         print("输入有误，请重新输入")
