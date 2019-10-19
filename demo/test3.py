@@ -1,5 +1,5 @@
 #coding:utf-8
-a2=raw_input("请输入a2")
+a2=input("请输入a2")
 a1=input("请输入a1")
 
 

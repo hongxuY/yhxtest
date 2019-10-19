@@ -2,7 +2,7 @@
 import unittest
 import requests
 from ddt import ddt, file_data
-from tests import config
+from demo.tests import config
 
 
 @ddt
