@@ -1,0 +1,96 @@
+{
+  "test_case01": {
+    "input_data": {
+      "uid": "4",
+      "active": "1",
+      "score": "100",
+      "discount": "0.8",
+      "tel": "12387654329"
+    },
+    "expect_data": {
+      "uid": 4,
+      "active": 1,
+      "score": 100,
+      "discount": 0.8,
+      "tel": "12387654329"
+    }
+  },
+  "test_case02": {
+    "input_data": {
+      "uid": "4",
+      "active": "1"
+    },
+    "expect_data": {
+      "uid": 4,
+      "active": 1,
+      "score": 100,
+      "discount": 0.8,
+      "tel": "12387654329"
+    }
+  },
+  "test_case03": {
+    "input_data": {
+      "uid": "4",
+      "score": "100"
+    },
+    "expect_data": {
+      "uid": 4,
+      "active": 1,
+      "score": 100,
+      "discount": 0.8,
+      "tel": "12387654329"
+    }
+  },
+  "test_case04": {
+    "input_data": {
+      "uid": "4",
+      "discount": "0.8"
+    },
+    "expect_data": {
+       "uid": 4,
+      "active": 1,
+      "score": 100,
+      "discount": 0.8,
+      "tel": "12387654329"
+    }
+  },
+  "test_case05": {
+    "input_data": {
+      "uid": "4",
+      "tel": "12387654329"
+    },
+    "expect_data": {
+      "uid": 4,
+      "active": 1,
+      "score": 100,
+      "discount": 0.8,
+      "tel": "12387654329"
+    }
+  },
+   "test_case06": {
+    "input_data": {
+      "uid": "10000",
+      "active": "1",
+      "score": "100",
+      "discount": "0.8",
+      "tel": "12387654399"
+    },
+    "expect_data": {
+      "return_code": "400",
+      "return_msg": "该用户不存在"
+    }
+  },
+  "test_case07": {
+    "input_data": {
+      "uid": "1",
+      "active": "-1",
+      "score": "100",
+      "discount": "0.8",
+      "tel": "12387654329"
+    },
+    "expect_data": {
+      "return_code": "400",
+      "return_msg": "激活状态只能为0或1"
+    }
+  }
+}

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+
+    <!-- Title -->
+    <title>Nosetests Report</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="pygments.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="nosetests.css">
+    <!-- Javascript -->
+    <script type="text/javascript" src="jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="nosetests.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Nosetests Report</h1>
+    </div>
+    <div id="container">
+        <p class="summary">
+            Ran 52 tests. 2 failed. 22 raised an error.
+        </p>
+        <div id="grid">
+            <div class="row header-row">
+                <div class="column column-1 header-column">Module</div>
+                <div class="column column-2 header-column">Test Name</div>
+                <div class="column column-2 header-column">Test Description</div>
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00001_testuid_case03</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00001_testuid_case03</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_asd HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00002_testuid_case02</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00002_testuid_case02</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_1000 HTTP/1.1&quot; 200 59\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00003_testuid_case01</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00003_testuid_case01</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_3 HTTP/1.1&quot; 200 59\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00004_testuid_case07</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00004_testuid_case07</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_ HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00005_testuid_case06</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00005_testuid_case06</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_!@ HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00006_testuid_case05</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00006_testuid_case05</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_asd HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00007_testuid_case04</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00007_testuid_case04</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_asd132 HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00008_testuid_case09</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00008_testuid_case09</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_sads%EF%BC%9B%E2%80%98%EF%BC%9B HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00009_testuid_case08</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00009_testuid_case08</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_!@ HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00010_testuid_case012</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00010_testuid_case012</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_asd%EF%BC%9B%E2%80%99%EF%BC%9B@%EF%BC%81@%EF%BC%81 HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00011_testuid_case011</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00011_testuid_case011</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_null HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_get_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestcase.test_get_member_by_uid_00012_testuid_case010</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_get_member_by_uid_00012_testuid_case010</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_get_member_by_uid.py&quot;</span>, line <span class="m">18</span>, in <span class="n">test_get_member_by_uid</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">resp_jsondata</span><span class="p">[</span><span class="s1">&#39;reason&#39;</span><span class="p">])</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;\&#39;reason\&#39;\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\nurllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002\nurllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member/uid_ HTTP/1.1&quot; 200 65\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_search_by_tel</pre></div>
+                    <div class="column column-2">
+                        <pre>TestMemByTel.test_SearchByTel_00001_SearchByTel_case06</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_SearchByTel_00001_SearchByTel_case06</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_search_by_tel.py&quot;</span>, line <span class="m">24</span>, in <span class="n">test_SearchByTel</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">statue_code</span><span class="p">,</span><span class="s2">&quot;请求url:</span><span class="si">%s</span><span class="s2">,返回状态码</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">resp</span><span class="p">(</span><span class="s2">&quot;statue_code&quot;</span><span class="p">)))</span>
+<span class="gr">AttributeError</span>: <span class="n">&#39;Response&#39; object has no attribute &#39;statue_code&#39;</span>
+<span class="err">-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------</span>
+<span class="err">{u&#39;count&#39;: 9, u&#39;member&#39;: [{u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 500, u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 300, u&#39;tel&#39;: u&#39;12341234211&#39;, u&#39;uid&#39;: 2}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 100, u&#39;tel&#39;: u&#39;12387654329&#39;, u&#39;uid&#39;: 4}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 199, u&#39;tel&#39;: u&#39;12345678567&#39;, u&#39;uid&#39;: 5}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 2, u&#39;tel&#39;: u&#39;12345678568&#39;, u&#39;uid&#39;: 9}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 11, u&#39;tel&#39;: u&#39;12341234341&#39;, u&#39;uid&#39;: 10}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 51, u&#39;tel&#39;: u&#39;12341234342&#39;, u&#39;uid&#39;: 11}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 59, u&#39;tel&#39;: u&#39;12341234344&#39;, u&#39;uid&#39;: 13}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 0, u&#39;tel&#39;: u&#39;13342198897&#39;, u&#39;uid&#39;: 14}], u&#39;code&#39;: 200, u&#39;msg&#39;: u&#39;queryAll success&#39;}</span>
+
+<span class="err">--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member?tel=133123456789 HTTP/1.1&quot; 200 668</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_search_by_tel</pre></div>
+                    <div class="column column-2">
+                        <pre>TestMemByTel.test_SearchByTel_00002_SearchByTel_case05</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_SearchByTel_00002_SearchByTel_case05</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_search_by_tel.py&quot;</span>, line <span class="m">24</span>, in <span class="n">test_SearchByTel</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">statue_code</span><span class="p">,</span><span class="s2">&quot;请求url:</span><span class="si">%s</span><span class="s2">,返回状态码</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">resp</span><span class="p">(</span><span class="s2">&quot;statue_code&quot;</span><span class="p">)))</span>
+<span class="gr">AttributeError</span>: <span class="n">&#39;Response&#39; object has no attribute &#39;statue_code&#39;</span>
+<span class="err">-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------</span>
+<span class="err">{u&#39;count&#39;: 9, u&#39;member&#39;: [{u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 500, u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 300, u&#39;tel&#39;: u&#39;12341234211&#39;, u&#39;uid&#39;: 2}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 100, u&#39;tel&#39;: u&#39;12387654329&#39;, u&#39;uid&#39;: 4}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 199, u&#39;tel&#39;: u&#39;12345678567&#39;, u&#39;uid&#39;: 5}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 2, u&#39;tel&#39;: u&#39;12345678568&#39;, u&#39;uid&#39;: 9}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 11, u&#39;tel&#39;: u&#39;12341234341&#39;, u&#39;uid&#39;: 10}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 51, u&#39;tel&#39;: u&#39;12341234342&#39;, u&#39;uid&#39;: 11}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 59, u&#39;tel&#39;: u&#39;12341234344&#39;, u&#39;uid&#39;: 13}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 0, u&#39;tel&#39;: u&#39;13342198897&#39;, u&#39;uid&#39;: 14}], u&#39;code&#39;: 200, u&#39;msg&#39;: u&#39;queryAll success&#39;}</span>
+
+<span class="err">--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member?tel=13312345678 HTTP/1.1&quot; 200 668</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_search_by_tel</pre></div>
+                    <div class="column column-2">
+                        <pre>TestMemByTel.test_SearchByTel_00003_SearchByTel_case04</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_SearchByTel_00003_SearchByTel_case04</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_search_by_tel.py&quot;</span>, line <span class="m">24</span>, in <span class="n">test_SearchByTel</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">statue_code</span><span class="p">,</span><span class="s2">&quot;请求url:</span><span class="si">%s</span><span class="s2">,返回状态码</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">resp</span><span class="p">(</span><span class="s2">&quot;statue_code&quot;</span><span class="p">)))</span>
+<span class="gr">AttributeError</span>: <span class="n">&#39;Response&#39; object has no attribute &#39;statue_code&#39;</span>
+<span class="err">-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------</span>
+<span class="err">{u&#39;count&#39;: 9, u&#39;member&#39;: [{u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 500, u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 300, u&#39;tel&#39;: u&#39;12341234211&#39;, u&#39;uid&#39;: 2}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 100, u&#39;tel&#39;: u&#39;12387654329&#39;, u&#39;uid&#39;: 4}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 199, u&#39;tel&#39;: u&#39;12345678567&#39;, u&#39;uid&#39;: 5}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 2, u&#39;tel&#39;: u&#39;12345678568&#39;, u&#39;uid&#39;: 9}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 11, u&#39;tel&#39;: u&#39;12341234341&#39;, u&#39;uid&#39;: 10}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 51, u&#39;tel&#39;: u&#39;12341234342&#39;, u&#39;uid&#39;: 11}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 59, u&#39;tel&#39;: u&#39;12341234344&#39;, u&#39;uid&#39;: 13}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 0, u&#39;tel&#39;: u&#39;13342198897&#39;, u&#39;uid&#39;: 14}], u&#39;code&#39;: 200, u&#39;msg&#39;: u&#39;queryAll success&#39;}</span>
+
+<span class="err">--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member?tel=5678 HTTP/1.1&quot; 200 668</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_search_by_tel</pre></div>
+                    <div class="column column-2">
+                        <pre>TestMemByTel.test_SearchByTel_00004_SearchByTel_case03</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_SearchByTel_00004_SearchByTel_case03</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_search_by_tel.py&quot;</span>, line <span class="m">24</span>, in <span class="n">test_SearchByTel</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">statue_code</span><span class="p">,</span><span class="s2">&quot;请求url:</span><span class="si">%s</span><span class="s2">,返回状态码</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">resp</span><span class="p">(</span><span class="s2">&quot;statue_code&quot;</span><span class="p">)))</span>
+<span class="gr">AttributeError</span>: <span class="n">&#39;Response&#39; object has no attribute &#39;statue_code&#39;</span>
+<span class="err">-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------</span>
+<span class="err">{u&#39;count&#39;: 9, u&#39;member&#39;: [{u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 500, u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 300, u&#39;tel&#39;: u&#39;12341234211&#39;, u&#39;uid&#39;: 2}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 100, u&#39;tel&#39;: u&#39;12387654329&#39;, u&#39;uid&#39;: 4}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 199, u&#39;tel&#39;: u&#39;12345678567&#39;, u&#39;uid&#39;: 5}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 2, u&#39;tel&#39;: u&#39;12345678568&#39;, u&#39;uid&#39;: 9}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 11, u&#39;tel&#39;: u&#39;12341234341&#39;, u&#39;uid&#39;: 10}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 51, u&#39;tel&#39;: u&#39;12341234342&#39;, u&#39;uid&#39;: 11}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 59, u&#39;tel&#39;: u&#39;12341234344&#39;, u&#39;uid&#39;: 13}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 0, u&#39;tel&#39;: u&#39;13342198897&#39;, u&#39;uid&#39;: 14}], u&#39;code&#39;: 200, u&#39;msg&#39;: u&#39;queryAll success&#39;}</span>
+
+<span class="err">--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member?tel=4567 HTTP/1.1&quot; 200 668</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_search_by_tel</pre></div>
+                    <div class="column column-2">
+                        <pre>TestMemByTel.test_SearchByTel_00005_SearchByTel_case02</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_SearchByTel_00005_SearchByTel_case02</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_search_by_tel.py&quot;</span>, line <span class="m">24</span>, in <span class="n">test_SearchByTel</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">statue_code</span><span class="p">,</span><span class="s2">&quot;请求url:</span><span class="si">%s</span><span class="s2">,返回状态码</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">resp</span><span class="p">(</span><span class="s2">&quot;statue_code&quot;</span><span class="p">)))</span>
+<span class="gr">AttributeError</span>: <span class="n">&#39;Response&#39; object has no attribute &#39;statue_code&#39;</span>
+<span class="err">-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------</span>
+<span class="err">{u&#39;count&#39;: 9, u&#39;member&#39;: [{u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 500, u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 300, u&#39;tel&#39;: u&#39;12341234211&#39;, u&#39;uid&#39;: 2}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 100, u&#39;tel&#39;: u&#39;12387654329&#39;, u&#39;uid&#39;: 4}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 199, u&#39;tel&#39;: u&#39;12345678567&#39;, u&#39;uid&#39;: 5}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 2, u&#39;tel&#39;: u&#39;12345678568&#39;, u&#39;uid&#39;: 9}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 11, u&#39;tel&#39;: u&#39;12341234341&#39;, u&#39;uid&#39;: 10}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 51, u&#39;tel&#39;: u&#39;12341234342&#39;, u&#39;uid&#39;: 11}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 59, u&#39;tel&#39;: u&#39;12341234344&#39;, u&#39;uid&#39;: 13}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 0, u&#39;tel&#39;: u&#39;13342198897&#39;, u&#39;uid&#39;: 14}], u&#39;code&#39;: 200, u&#39;msg&#39;: u&#39;queryAll success&#39;}</span>
+
+<span class="err">--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member?tel=11111111111 HTTP/1.1&quot; 200 668</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_search_by_tel</pre></div>
+                    <div class="column column-2">
+                        <pre>TestMemByTel.test_SearchByTel_00006_SearchByTel_case01</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_SearchByTel_00006_SearchByTel_case01</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_search_by_tel.py&quot;</span>, line <span class="m">24</span>, in <span class="n">test_SearchByTel</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="n">resp</span><span class="o">.</span><span class="n">statue_code</span><span class="p">,</span><span class="s2">&quot;请求url:</span><span class="si">%s</span><span class="s2">,返回状态码</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">resp</span><span class="p">(</span><span class="s2">&quot;statue_code&quot;</span><span class="p">)))</span>
+<span class="gr">AttributeError</span>: <span class="n">&#39;Response&#39; object has no attribute &#39;statue_code&#39;</span>
+<span class="err">-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------</span>
+<span class="err">{u&#39;count&#39;: 9, u&#39;member&#39;: [{u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 500, u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 300, u&#39;tel&#39;: u&#39;12341234211&#39;, u&#39;uid&#39;: 2}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 0.8, u&#39;score&#39;: 100, u&#39;tel&#39;: u&#39;12387654329&#39;, u&#39;uid&#39;: 4}, {u&#39;active&#39;: 0, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 199, u&#39;tel&#39;: u&#39;12345678567&#39;, u&#39;uid&#39;: 5}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 2, u&#39;tel&#39;: u&#39;12345678568&#39;, u&#39;uid&#39;: 9}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 11, u&#39;tel&#39;: u&#39;12341234341&#39;, u&#39;uid&#39;: 10}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 51, u&#39;tel&#39;: u&#39;12341234342&#39;, u&#39;uid&#39;: 11}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 59, u&#39;tel&#39;: u&#39;12341234344&#39;, u&#39;uid&#39;: 13}, {u&#39;active&#39;: 1, u&#39;discount&#39;: 1.0, u&#39;score&#39;: 0, u&#39;tel&#39;: u&#39;13342198897&#39;, u&#39;uid&#39;: 14}], u&#39;code&#39;: 200, u&#39;msg&#39;: u&#39;queryAll success&#39;}</span>
+
+<span class="err">--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;GET /member?tel=13312345678 HTTP/1.1&quot; 200 668</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_update_all_members</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_update_all_members_00001_test_case04</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_update_all_members_00001_test_case04</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_update_all_members.py&quot;</span>, line <span class="m">14</span>, in <span class="n">test_update_all_members</span>
+    <span class="k">if</span> <span class="n">input_data</span><span class="p">[</span><span class="s2">&quot;active&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;active&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_update_all_members</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_update_all_members_00002_test_case05</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_update_all_members_00002_test_case05</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_update_all_members.py&quot;</span>, line <span class="m">14</span>, in <span class="n">test_update_all_members</span>
+    <span class="k">if</span> <span class="n">input_data</span><span class="p">[</span><span class="s2">&quot;active&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;active&#39;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_update_all_members</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_update_all_members_00006_test_case02</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_update_all_members_00006_test_case02</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_update_all_members.py&quot;</span>, line <span class="m">19</span>, in <span class="n">test_update_all_members</span>
+    <span class="k">if</span> <span class="n">input_data</span><span class="p">[</span><span class="s2">&quot;score&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+<span class="gr">KeyError</span>: <span class="n">u&quot;&#39;score&#39;\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n1\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------&quot;</span>
+</pre></div>
+
+            </div><div class="row error-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_update_all_members</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_update_all_members_00007_test_case03</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_update_all_members_00007_test_case03</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_update_all_members.py&quot;</span>, line <span class="m">14</span>, in <span class="n">test_update_all_members</span>
+    <span class="k">if</span> <span class="n">input_data</span><span class="p">[</span><span class="s2">&quot;active&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+<span class="gr">KeyError</span>: <span class="n">&#39;active&#39;</span>
+</pre></div>
+
+            </div><div class="row fail-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00007_updatecsore_case001</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00007_updatecsore_case001</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_updatescore_by_uid.py&quot;</span>, line <span class="m">40</span>, in <span class="n">test_UpdateScore</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">fail_list</span><span class="p">),</span><span class="s2">&quot;exp_json:</span><span class="si">%s</span><span class="s2">, act_json:</span><span class="si">%s</span><span class="s2">, failed_keys:</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">expect_data</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">resp_data</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">fail_list</span><span class="p">)))</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">513</span>, in <span class="n">assertEqual</span>
+    <span class="n">assertion_func</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">msg</span><span class="p">)</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">506</span>, in <span class="n">_baseAssertEqual</span>
+    <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">failureException</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="gr">AssertionError</span>: <span class="n">exp_json:{u&#39;tel&#39;: u&#39;13335491027&#39;, u&#39;uid&#39;: 1, u&#39;score_before&#39;: 0, u&#39;return_code&#39;: 200, u&#39;return_msg&#39;: u&#39;update score success!&#39;, u&#39;score_change&#39;: 200, u&#39;score_after&#39;: 200}, act_json:{u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1, u&#39;score_before&#39;: 0, u&#39;return_code&#39;: 200, u&#39;return_msg&#39;: u&#39;update score success!&#39;, u&#39;score_change&#39;: 200, u&#39;score_after&#39;: 200}, failed_keys:[u&#39;tel&#39;]</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;PATCH /member/uid_1 HTTP/1.1&quot; 200 141</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row fail-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00009_updatecsore_case002</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00009_updatecsore_case002</span>
+                    
+                    </div>
+                </div>
+                <div class="error-info"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">329</span>, in <span class="n">run</span>
+    <span class="n">testMethod</span><span class="p">()</span>
+  File <span class="nb">&quot;c:\python27\lib\site-packages\ddt.py&quot;</span>, line <span class="m">145</span>, in <span class="n">wrapper</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+  File <span class="nb">&quot;D:\workspace\pyWorkspace\himember_apitest_02\tests\test_updatescore_by_uid.py&quot;</span>, line <span class="m">40</span>, in <span class="n">test_UpdateScore</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">fail_list</span><span class="p">),</span><span class="s2">&quot;exp_json:</span><span class="si">%s</span><span class="s2">, act_json:</span><span class="si">%s</span><span class="s2">, failed_keys:</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">expect_data</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">resp_data</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">fail_list</span><span class="p">)))</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">513</span>, in <span class="n">assertEqual</span>
+    <span class="n">assertion_func</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">msg</span><span class="p">)</span>
+  File <span class="nb">&quot;c:\python27\lib\unittest\case.py&quot;</span>, line <span class="m">506</span>, in <span class="n">_baseAssertEqual</span>
+    <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">failureException</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="gr">AssertionError</span>: <span class="n">exp_json:{u&#39;tel&#39;: u&#39;13335491027&#39;, u&#39;uid&#39;: 1, u&#39;score_before&#39;: 0, u&#39;return_code&#39;: 200, u&#39;return_msg&#39;: u&#39;update score success!&#39;, u&#39;score_change&#39;: 0, u&#39;score_after&#39;: 200}, act_json:{u&#39;tel&#39;: u&#39;12387654321&#39;, u&#39;uid&#39;: 1, u&#39;score_before&#39;: 0, u&#39;return_code&#39;: 200, u&#39;return_msg&#39;: u&#39;update score success!&#39;, u&#39;score_change&#39;: 0, u&#39;score_after&#39;: 200}, failed_keys:[u&#39;tel&#39;]</span>
+<span class="err">-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------</span>
+<span class="err">urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 127.0.0.1:5002</span>
+<span class="err">urllib3.connectionpool: DEBUG: http://127.0.0.1:5002 &quot;PATCH /member/uid_1 HTTP/1.1&quot; 200 139</span>
+<span class="err">--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</span>
+</pre></div>
+
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00001_testuid_case0010</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00001_testuid_case0010</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00002_testuid_case008</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00002_testuid_case008</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00003_testuid_case009</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00003_testuid_case009</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00004_testuid_case001</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00004_testuid_case001</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00005_testuid_case002</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00005_testuid_case002</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00006_testuid_case003</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00006_testuid_case003</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00007_testuid_case004</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00007_testuid_case004</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00008_testuid_case005</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00008_testuid_case005</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00009_testuid_case006</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00009_testuid_case006</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_Delete_member_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUidLocation.test_testUid_00010_testuid_case007</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testUid_00010_testuid_case007</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_addRegister</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_testTel_00001_testTel_case001</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testTel_00001_testTel_case001</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_addRegister</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_testTel_00002_testTel_case003</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testTel_00002_testTel_case003</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_addRegister</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_testTel_00003_testTel_case002</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testTel_00003_testTel_case002</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_addRegister</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_testTel_00004_testTel_case005</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testTel_00004_testTel_case005</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_addRegister</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_testTel_00005_testTel_case004</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testTel_00005_testTel_case004</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_addRegister</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_testTel_00006_testTel_case007</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testTel_00006_testTel_case007</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_addRegister</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_testTel_00007_testTel_case006</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_testTel_00007_testTel_case006</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_getAll</pre></div>
+                    <div class="column column-2">
+                        <pre>TestMember.test_getAllMember01</pre>
+                    </div>
+                    <div class="column column-3">
+                    
+                        <span class="no-description"></span>
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_update_all_members</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_update_all_members_00003_test_case06</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_update_all_members_00003_test_case06</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_update_all_members</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_update_all_members_00004_test_case07</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_update_all_members_00004_test_case07</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_update_all_members</pre></div>
+                    <div class="column column-2">
+                        <pre>MyTestCase.test_update_all_members_00005_test_case01</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_update_all_members_00005_test_case01</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00001_updatecsore_case009</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00001_updatecsore_case009</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00002_updatecsore_case008</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00002_updatecsore_case008</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00003_updatecsore_case005</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00003_updatecsore_case005</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00004_updatecsore_case004</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00004_updatecsore_case004</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00005_updatecsore_case007</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00005_updatecsore_case007</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00006_updatecsore_case006</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00006_updatecsore_case006</span>
+                    
+                    </div>
+                </div>
+                
+            </div><div class="row pass-row">
+                <div class="information">
+                    <div class="column column-1"><pre>tests.test_updatescore_by_uid</pre></div>
+                    <div class="column column-2">
+                        <pre>TestUpdateScore.test_UpdateScore_00008_updatecsore_case003</pre>
+                    </div>
+                    <div class="column column-3">
+                    <span class="description">test_UpdateScore_00008_updatecsore_case003</span>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </table>
+    </div>
+</body>
+</html>
