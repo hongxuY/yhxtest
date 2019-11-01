@@ -1,7 +1,7 @@
 # coding:utf-8
 
 
-from flask import Flask, request,jsonify
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -9,14 +9,12 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        username = request.get_data()
-        password = request.get_data()
-        print("username:%s"%(username))
-        print("password:%s"%(password))
-        if username=="yuan"and password==123:
-            resp={
-                "return_code":200,
-                "return_msg":"登录成功"
+        username = request.form['username']
+        password = request.form['password']
+        if username == "yuan" and password == "yuan123":
+            resp = {
+                "return_code": 200,
+                "return_msg": "登录成功"
             }
         else:
             resp = {
@@ -25,7 +23,6 @@ def index():
             }
 
         return jsonify(resp)
-
 
 
 if __name__ == '__main__':
