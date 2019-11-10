@@ -1,4 +1,4 @@
-#coding:utf-8
+# coding:utf-8
 
 class ele_from_login():
 
@@ -12,20 +12,42 @@ class ele_from_login():
         ele = self.driver.find_element_by_xpath('//*[@id="tab-second"]')
         return ele
 
-    #输入用户名
+    # 输入用户名
     @property
     def ele_user(self):
-        ele = self.driver.find_element_by_xpath('/html/body/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/form/div[1]/div/div[1]/div/input')
+        ele = self.driver.find_element_by_xpath(
+            '/html/body/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/form/div[1]/div/div[1]/div/input')
         return ele
 
-    #输入密码
+    # 输入密码
     @property
     def ele_password(self):
-        ele = self.driver.find_element_by_xpath('/html/body/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/form/div[2]/div/div[1]/div[2]/input')
+        ele = self.driver.find_element_by_xpath(
+            '/html/body/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/form/div[2]/div/div[1]/div[2]/input')
         return ele
 
-    #登录按钮
+    # 登录按钮
     @property
     def ele_button_login(self):
-        ele = self.driver.find_element_by_xpath('/html/body/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/div/button')
+        ele = self.driver.find_element_by_xpath(
+            '/html/body/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/div/button')
+        return ele
+
+    # 登录成功后码上检页面显示的登录用户名
+    @property
+    def ele_after_login_username(self):
+        ele = self.driver.find_element_by_xpath(
+            '//div[@class="navbar_webtitlename"]')
+        return ele
+
+    # 登录成功后码上检页面的标题
+    @property
+    def ele_after_login_title(self):
+        ele = self.driver.title
+        return ele
+
+    # 登录成功后码上检页面的url
+    @property
+    def ele_after_login_url(self):
+        ele = self.driver.current_url
         return ele
