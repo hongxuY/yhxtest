@@ -2,6 +2,7 @@ import unittest
 from selenium import webdriver
 from test_ui_msj import config
 from test_ui_msj.msj.common import Common
+from test_ui_msj.msj.ele_login import ele_from_login
 import time
 
 
@@ -23,7 +24,10 @@ class MyTestCase(unittest.TestCase):
         self.user = config.USER
         self.password = config.PASSWORD
         self.common = Common()
-        msg = self.common.login(self.driver, self.user, self.password)
+        self.common.login(self.driver, self.user, self.password)
+        time.sleep(2)
+
+        self.ele_login = ele_from_login(self.driver)
 
         fail_list = []
 
@@ -31,9 +35,9 @@ class MyTestCase(unittest.TestCase):
         exp_title = '码上检管理系统'
         exp_username = config.USER_NAME
 
-        act_url = msg["url"]
-        act_title = msg["title"]
-        act_username = msg["username"]
+        act_url = self.ele_login.ele_after_login_url
+        act_title = self.ele_login.ele_after_login_title
+        act_username = self.ele_login.ele_after_login_username.text
 
         if exp_url != act_url:
             fail_list.append(act_url)
