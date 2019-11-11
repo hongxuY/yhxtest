@@ -15,6 +15,10 @@ class MyTestCase(unittest.TestCase):
         cls.driver.maximize_window()
         time.sleep(2)
 
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.close()
+
     def test_login_by_password(self):
         self.user = config.USER
         self.password = config.PASSWORD
@@ -23,7 +27,7 @@ class MyTestCase(unittest.TestCase):
 
         fail_list = []
 
-        exp_url ='https://whiot.ihaozhuo.com/msjPage/index.html#/commodity/packagelist'
+        exp_url = 'https://whiot.ihaozhuo.com/msjPage/index.html#/commodity/packagelist'
         exp_title = '码上检管理系统'
         exp_username = config.USER_NAME
 
