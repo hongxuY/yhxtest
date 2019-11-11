@@ -1,6 +1,4 @@
 # coding:utf-8
-
-
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -21,9 +19,8 @@ def index():
                 "return_code": 500,
                 "return_msg": "登录失败"
             }
-
         return jsonify(resp)
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port="5001")
