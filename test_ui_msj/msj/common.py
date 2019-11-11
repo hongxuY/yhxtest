@@ -1,6 +1,5 @@
 #coding:utf-8
 from test_ui_msj.msj.ele_login import ele_from_login
-import time
 
 class Common():
 
