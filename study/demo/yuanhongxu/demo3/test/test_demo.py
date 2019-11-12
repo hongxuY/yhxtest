@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         ele_confirm_password.send_keys(__cpassword)
         ele_submit.click()
         return_msg = json.loads(ele_regmsg.text.split(u"成功:")[-1])
-        print return_msg
+        print (return_msg)
         exp_result = {u"username": u"yuan", u"password": u"yuan", u"email": u"yuan@qq.com"}
         file_list = []
         for key in exp_result.keys():

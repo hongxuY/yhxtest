@@ -1,4 +1,7 @@
 # coding:utf-8
+import time
+from test_ui_msj import write_config
+
 
 class ele_from_login():
 
@@ -6,9 +9,31 @@ class ele_from_login():
     def __init__(self, driver):
         self.driver = driver
 
+    def write(self, xpath="xpath", id="id"):
+        chishu = int(write_config.wait_max_time / write_config.wait_time)
+        for i in range(chishu):
+            try:
+                if xpath != xpath:
+                    element = self.driver.find_element_by_xpath(xpath)
+                    print ("在第%s秒找到这个控件"%(i/2))
+                    return element
+                elif id != id:
+                    element = self.driver.find_element_by_id(id)
+                    return element
+                else:
+                    return None
+
+            except:
+                time.sleep(write_config.wait_time)
+                if i == (chishu - 1):
+                    print("无法获取该控件")
+                    return None
+
     # 切换密码登录按钮
     @property
     def ele_longin_by_pasword(self):
+        # xpath = '//*[@id="tab-second"]'
+        # ele = self.write(xpath)
         ele = self.driver.find_element_by_xpath('//*[@id="tab-second"]')
         return ele
 

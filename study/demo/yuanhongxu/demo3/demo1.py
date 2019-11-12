@@ -113,10 +113,10 @@ for i in may:
 for i in june:
     june_sum += int(i)
 
-print may
-print june
-print may_sum
-print june_sum
+print (may)
+print (june)
+print (may_sum)
+print (june_sum)
 
 drive.back()
 
@@ -139,13 +139,13 @@ ele_opt_email1 = drive.find_element_by_xpath("/html/body/div[1]/div[3]/input[2]"
 ele_opt_email1.click()
 
 ele_fruit = Select(drive.find_element_by_id(u"fruit"))
-print ele_fruit.first_selected_option.text
+print (ele_fruit.first_selected_option.text)
 
 all_fruit = ele_fruit.options
-print len(all_fruit)
-print all_fruit[2].text
+print (len(all_fruit))
+print (all_fruit[2].text)
 for fruit in all_fruit:
-    print fruit.text
+    print (fruit.text)
 
 ele_fruit.select_by_index(1)
 ele_fruit.select_by_value(u"mihoutao")
@@ -168,30 +168,30 @@ ele_fruit.select_by_visible_text(u"荔枝")
 
 ele_div1 = drive.find_element_by_id(u"div1")
 ele_div2 = drive.find_element_by_id(u"div2")
-print ele_div1.is_displayed()
-print ele_div2.is_displayed()
+print (ele_div1.is_displayed())
+print (ele_div2.is_displayed())
 ele_button = drive.find_element_by_id(u"button1")
 ele_button.click()
-print ele_div1.is_displayed()
-print ele_div2.is_displayed()
+print (ele_div1.is_displayed())
+print (ele_div2.is_displayed())
 
-print "================================"
+print ("================================")
 
 ele_enable_input = drive.find_element_by_xpath("/html/body/div[3]/div[1]/input")
-print ele_enable_input.is_enabled()
+print (ele_enable_input.is_enabled())
 
 ele_disenable_input = drive.find_element_by_xpath("/html/body/div[3]/div[2]/input")
-print ele_disenable_input.is_enabled()
+print (ele_disenable_input.is_enabled())
 
 ele_doubleClickBt = drive.find_element_by_id("context_click")
 action_chains = ActionChains(drive)
 action_chains.double_click(ele_doubleClickBt).perform()
-print ele_doubleClickBt.get_attribute("style")
+print (ele_doubleClickBt.get_attribute("style"))
 
 ele_alterbt=drive.find_element_by_xpath("/html/body/div[5]/div/input[1]")
 ele_alterbt.click()
 alert=drive.switch_to.alert
-print alert.text
+print (alert.text)
 time.sleep(2)
 alert.accept()
 
