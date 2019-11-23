@@ -26,15 +26,22 @@ class MyTestCase(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.close()
 
+    def tearDown(self):
+        print("b")
 
     def setUp(self):
         self.driver.get(self.test_url)
 
     def test_something(self):
 
+        print("aa")
 
-        self.assertEqual(True, True)
+
 
 
 if __name__ == '__main__':
     unittest.main()
+
+
+
+
