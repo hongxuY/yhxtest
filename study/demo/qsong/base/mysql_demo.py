@@ -3,12 +3,12 @@
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 
-# 1. 实例化一个Flask 对象
+# 实例化一个Flask 对象
 app = Flask(__name__)
 
-# 2. 实例化一个flask_sqlalchemy对象， 用于操作数据库
+# 实例化一个flask_sqlalchemy对象， 用于操作数据库
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:root@192.168.8.52:3306/hiMarket"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:yuan123@192.168.18.225:3306/test"
 db = SQLAlchemy(app)
 
 
@@ -19,13 +19,13 @@ class Student(db.Model):
     s_name = db.Column(db.String(16), nullable=False)
     s_age = db.Column(db.Integer, default=0)
 
-    __tablename__ = "student"
+    __tablename__ = "student1"
 
 
 @app.route('/initdb', methods=['POST'])
 def init_db():
     db.create_all()
-    ret_dic = {"ret_code":"200", "ret_msg":"创建数据库成功"}
+    ret_dic = {"ret_code": "200", "ret_msg": "创建数据库成功"}
     return jsonify(ret_dic)
 
 
@@ -39,9 +39,9 @@ def add_student():
     db.session.add(stu)
     db.session.commit()
 
-    ret_dic = {"ret_code":"200",
-               "ret_msg":"添加学生成功",
-               "student":{"s_id":stu.s_id, "s_no":stu.s_no, "s_name":stu.s_name, "s_age":stu.s_age}
+    ret_dic = {"ret_code": "200",
+               "ret_msg": "添加学生成功",
+               "student": {"s_id": stu.s_id, "s_no": stu.s_no, "s_name": stu.s_name, "s_age": stu.s_age}
                }
     return jsonify(ret_dic)
 
@@ -51,7 +51,7 @@ def get_all_students():
     db_query = Student.query.all()
     student_list = []
     for stu in db_query:
-        student_info = {"s_id":stu.s_id, "s_no":stu.s_no, "s_name":stu.s_name, "s_age":stu.s_age}
+        student_info = {"s_id": stu.s_id, "s_no": stu.s_no, "s_name": stu.s_name, "s_age": stu.s_age}
         student_list.append(student_info)
 
     ret_dic = {
@@ -66,18 +66,18 @@ def get_all_students():
 
 @app.route('/search')
 def search_student():
-    #/search?no=SDET001
+    # /search?no=SDET001
     target_no = request.args['no']
-    db_ret = Student.query.filter(Student.s_no==target_no)
+    db_ret = Student.query.filter(Student.s_no == target_no)
 
     student_list = []
     for stu in db_ret:
-        student_info = {"s_id":stu.s_id, "s_no":stu.s_no, "s_name":stu.s_name, "s_age":stu.s_age}
+        student_info = {"s_id": stu.s_id, "s_no": stu.s_no, "s_name": stu.s_name, "s_age": stu.s_age}
         student_list.append(student_info)
 
     ret_dic = {
-        "return_code":"200",
-        "return_msg":"Search students success",
+        "return_code": "200",
+        "return_msg": "Search students success",
         "count": len(student_list),
         "students": student_list
     }
@@ -100,10 +100,11 @@ def update_student_info():
     ret_dic = {
         "return_code": "200",
         "return_msg": "Update students success",
-        "student": {"s_id":stu.s_id, "s_no":stu.s_no, "s_name":stu.s_name, "s_age":stu.s_age}
+        "student": {"s_id": stu.s_id, "s_no": stu.s_no, "s_name": stu.s_name, "s_age": stu.s_age}
     }
 
     return jsonify(ret_dic)
+
 
 @app.route('/delete', methods=['DELETE'])
 def delete_student_by_no():
@@ -121,5 +122,4 @@ def delete_student_by_no():
 
 
 if __name__ == '__main__':
-    app.run(port=8000)
-
+    app.run(host="0.0.0.0", port=8000)
