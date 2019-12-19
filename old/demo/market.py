@@ -1,7 +1,7 @@
 # -*- encoding:utf-8 -*-
 
 from flask import Flask, jsonify, request
-from demo.model import db, Member
+from old.demo import db, Member
 import config
 
 app = Flask(__name__)
