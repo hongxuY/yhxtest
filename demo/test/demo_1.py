@@ -28,6 +28,7 @@ def pa(wangzhi):
         html = resp.text
         dir_name = "D:/test/" + str(re.findall('<h1 class="post-title h3">(.*?)</h1>', html)[0])
         urls = re.findall('<a href="(.*?)" alt=".*?" title=".*?">', html)
+        url_num = 1
         # print(dir_name)
         if len(urls) != 0:
             print(dir_name + ":使用方式一获取成功")
@@ -35,6 +36,7 @@ def pa(wangzhi):
             urls = re.findall(
                 '<img alt=".*?" src=".*?" width=".*?" height=".*?" class=".*?" data-src="(.*?)" data-nclazyload=".*?" data-srcset=".*?" data-sizes=".*?">',
                 html)
+            url_num = 2
         if len(urls) == 0:
             print(dir_name + wangzhi + "获取失败")
             return "lose"
@@ -45,16 +47,18 @@ def pa(wangzhi):
             time.sleep(2)
             file_name = url.split("/")[-1]
             resp = get_request(url)
-            with open(dir_name + "/" + file_name, "wb")as f:
-                f.write(resp.content)
-        return (dir_name.split("/")[-1] + ":成功获取")
+            if not os.path.exists(dir_name + "/" + file_name):
+                with open(dir_name + "/" + file_name, "wb")as f:
+                    f.write(resp.content)
+        print(dir_name.split("/")[-1] + ":成功获取")
+        return url_num
     except:
         print(wangzhi + "获取失败")
         return None
 
 
 def get_photo(num):
-    for i in range(20):
+    for i in range(10):
         if i == 0:
             wang = "https://www.vmgirls.com/" + num + ".html"
         else:
@@ -65,8 +69,10 @@ def get_photo(num):
             break
         elif aa == "lose":
             break
+        elif aa == 2:
+            break
         else:
-            print(aa + "第%d页" % (i + 1))
+            print("第%d页" % (i + 1))
 
 
 nums = ['10990', '12105', '10777', '12543', '10788', '11745', '10766', '12570', '11221', '11242', '10870', '11153',
@@ -84,7 +90,8 @@ nums = ['10990', '12105', '10777', '12543', '10788', '11745', '10766', '12570', 
         '3889', '11232', '13172', '3868', '3819', '9699', '9456', '11707', '3897', '9550', '3896', '3901']
 for num in nums:
     print(num)
-    get_photo(num)
+    # get_photo(num)
+    pa("https://www.vmgirls.com/" + num + ".html")
 
 # wangzhi = "https://www.vmgirls.com/wp-admin/admin-ajax.php"
 # query = 17
